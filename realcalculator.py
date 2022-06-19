@@ -1,16 +1,18 @@
 import time
 print("Write Your First Number")
-cal1 = input()
+cal1 = int(input())
 print("Write Your Second Number")
-cal2 = input()
-print("Write add,sub,multi,div")
+cal2 = int(input())
+print("Enter +,-,*,/ : ")
 cal3 = input()
-if cal3 == "add":
-    print(int(cal1) + int(cal2))
-elif cal3 == "sub":
-    print(int(cal1) - int(cal2))
-elif cal3 == "multi":
-    print(int(cal1) * int(cal2))
+if cal3 == "+":
+    print(cal1+cal2)
+elif cal3 == "-":
+    print(cal1-cal2)
+elif cal3 == "*":
+    print(cal1*cal2)
+elif cal3 == "/":
+    print(cal1/cal2)
 else:
-    print(int(cal1) / int(cal2))
+    print("You have not entered any recognizable input")
 time.sleep(5)
